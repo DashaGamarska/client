@@ -1,0 +1,10 @@
+.error {
+  position: absolute;
+  bottom: -17px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 12px;
+  color: red;
+}

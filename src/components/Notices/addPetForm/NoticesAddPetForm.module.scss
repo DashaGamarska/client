@@ -1,0 +1,391 @@
+@use 'src/shared/styles/variables.scss' as vars;
+@use 'src/shared/styles/mixins.scss' as mixins;
+
+// Form
+.wrapper {
+	margin: 0 auto;
+	width: 240px;
+
+	@include mixins.media('tablet') {
+		width: 448px;
+	}
+}
+
+// First step
+.heading {
+	text-align: center;
+	margin-bottom: 20px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: -0.01em;
+
+	@include mixins.media('tablet') {
+		font-size: 20px;
+		line-height: 27px;
+	}
+}
+
+.categor {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-bottom: 32px;
+
+	&__label {
+		@include mixins.flex(flex-start, flex-start);
+		flex-direction: column;
+	}
+
+	&__input {
+		width: 100%;
+		outline: none;
+		padding: 8px 24px;
+		border-radius: 40px;
+		cursor: pointer;
+		border: 2px solid vars.$accent-color;
+		transition: vars.$transition;
+
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 19px;
+		display: flex;
+		align-items: center;
+		letter-spacing: 0.04em;
+
+		@include mixins.media('tablet') {
+			font-size: 20px;
+			line-height: 27px;
+		}
+
+		background-color: vars.$secondary-bg-color;
+		color: vars.$fifth-text-color;
+
+		&:hover,
+		&:active,
+		&:focus {
+			border-color: vars.$hover-color;
+			background-color: vars.$accent-color;
+			color: vars.$secondary-text-color;
+		}
+	}
+}
+
+.inputWrapper {
+	margin: 0px auto;
+	width: 100%;
+	max-width: 280px;
+	@include mixins.flex(center, center);
+	flex-direction: column;
+	gap: 16px;
+
+	@include mixins.media('tablet') {
+		min-width: 448px;
+		gap: 28px;
+	}
+}
+
+// Second step
+
+.sex {
+	@include mixins.flex(flex-start, center);
+	gap: 10px;
+	margin-bottom: 32px;
+
+	@include mixins.media('tablet') {
+		gap: 80px;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		align-items: center;
+		text-align: center;
+	}
+
+	&__item {
+		position: relative;
+		z-index: 10;
+
+		@include mixins.flex(center, center);
+		flex-direction: column;
+	}
+
+	&__paragraph {
+		margin-bottom: 16px;
+
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 26px;
+
+		@include mixins.media('tablet') {
+			margin-bottom: 28px;
+			font-size: 24px;
+			line-height: 26px;
+		}
+	}
+
+	&__input {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 26px;
+		cursor: pointer;
+		border: none;
+		background: none;
+
+		&:hover,
+		&:focus {
+			color: vars.$accent-color;
+		}
+	}
+
+	&__svg {
+		@include mixins.flex(center, center);
+
+		@include mixins.media('tablet') {
+			width: 60px;
+			height: 60px;
+		}
+	}
+}
+
+.upload {
+	position: relative;
+	z-index: 10;
+
+	&__label {
+		width: 233px;
+		@include mixins.flex(center, center);
+		flex-direction: column;
+		gap: 20px;
+
+		@include mixins.media('tablet') {
+			width: 448px;
+		}
+	}
+
+	&__text {
+		text-align: start;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 1.4;
+		color: vars.$primary-text-color;
+
+		@include mixins.media('tablet') {
+			font-size: 24px;
+			line-height: 1.1;
+		}
+	}
+
+	&__wrapper {
+		cursor: pointer;
+		@include mixins.flex(center, center);
+
+		width: 116px;
+		height: 116px;
+		border-radius: 20px;
+		background-color: vars.$primary-bg-color;
+
+		overflow: hidden;
+	}
+
+	&__input {
+		width: 0.1px;
+		height: 0.1px;
+		opacity: 0;
+		position: absolute;
+		z-index: -10;
+	}
+}
+
+.buttonWrap {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin-top: 20px;
+
+	@include mixins.media(tablet) {
+		flex-direction: row;
+	}
+
+	&__done {
+		width: 100%;
+		outline: none;
+		padding: 8px 28px;
+		border-radius: 40px;
+		cursor: pointer;
+		border: 2px solid vars.$accent-color;
+		transition: vars.$transition;
+		background-color: vars.$accent-color;
+		color: vars.$secondary-text-color;
+
+		&:hover {
+			background-color: vars.$hover-color;
+			border-color: vars.$hover-color;
+		}
+
+		@include mixins.media('tablet') {
+			padding: 10px 28px;
+		}
+	}
+}
+
+.paragraph {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 26px;
+	margin-bottom: 8px;
+	transition: vars.$transition;
+
+	@include mixins.media('tablet') {
+		font-size: 24px;
+	}
+}
+
+.input {
+	margin-bottom: 16px;
+	height: 40px;
+	width: 100%;
+
+	padding: 10px 15px;
+
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+
+	border: 1px solid vars.$accent-color;
+	color: vars.$primary-text-color;
+	background-color: vars.$primary-bg-color;
+	border-radius: 40px;
+	outline-color: vars.$accent-color;
+}
+
+.commentsInput {
+	margin-bottom: 16px;
+	height: 40px;
+	width: 100%;
+
+	padding: 10px 15px;
+
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+
+	border: 1px solid vars.$accent-color;
+	color: vars.$primary-text-color;
+	background-color: vars.$primary-bg-color;
+	border-radius: 40px;
+	outline-color: vars.$accent-color;
+
+	@include mixins.media('tablet') {
+		height: 113px;
+		border-radius: 20px;
+		padding-bottom: 75px;
+	}
+}
+
+.image {
+	width: 100%;
+	object-fit: cover;
+}
+
+.start {
+	color: vars.$accent-color;
+}
+
+.sexLabel {
+	width: 90px;
+	@include mixins.flex(center, center);
+	flex-direction: column;
+}
+
+.sexInput {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	position: absolute;
+	z-index: -10;
+
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 26px;
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+
+.sexInput:checked + .sexLabel,
+.sexInput:focus + .sexLabel {
+	border-radius: 20px;
+	outline: 3px solid vars.$accent-color;
+}
+
+.category__label {
+	width: fit-content;
+	@include mixins.flex(center, center);
+	flex-direction: column;
+
+	width: 100%;
+	outline: none;
+	padding: 8px 28px;
+	border-radius: 40px;
+	cursor: pointer;
+	border: 3px solid vars.$accent-color;
+	transition: vars.$transition;
+
+	background-color: vars.$secondary-bg-color;
+	color: vars.$fifth-text-color;
+
+	&:hover {
+		border-color: vars.$hover-color;
+	}
+
+	@include mixins.media('tablet') {
+		padding: 10px 28px;
+	}
+}
+
+.category__input {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	position: absolute;
+	z-index: -10;
+
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 26px;
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+
+.category__input:checked + .category__label {
+	background-color: vars.$accent-color;
+	color: vars.$secondary-text-color;
+}
+
+.category__input:focus + .category__label,
+.category__input:hover + .category__label {
+	background-color: vars.$hover-color;
+
+	// color: $secondary-text-color;
+}
+
+.category__paragraph {
+	@extend .paragraph;
+	margin-bottom: 0px;
+}
+
+.input__wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+}
+
+.inputsWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 20px; 
+}

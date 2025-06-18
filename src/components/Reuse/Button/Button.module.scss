@@ -1,0 +1,54 @@
+@use 'shared/styles/variables' as vars;
+@use 'shared/styles/mixins' as mixins;
+
+.btn {
+	width: 100%;
+	outline: none;
+	padding: 8px 28px;
+	border-radius: 40px;
+	cursor: pointer;
+	border: 2px solid vars.$accent-color;
+	transition: vars.$transition;
+
+	@include mixins.media('tablet') {
+		padding: 10px 28px;
+	}
+}
+
+.orange {
+	@extend .btn;
+	background-color: vars.$accent-color;
+	color: vars.$secondary-text-color;
+	&:hover {
+		background-color: vars.$hover-color;
+		border-color: vars.$hover-color;
+	}
+}
+
+.white {
+	@extend .btn;
+	background-color: vars.$secondary-bg-color;
+	color: vars.$fifth-text-color;
+	&:hover {
+		border-color: vars.$hover-color;
+	}
+}
+
+.transparent {
+	@extend .btn;
+	background-color: vars.$secondary-bg-color;
+	color: vars.$accent-color;
+	&:hover {
+		border-color: vars.$hover-color;
+		color: vars.$hover-color;
+	}
+}
+
+.disabled {
+	@extend .btn;
+	border: 2px solid lightgray;
+	cursor: default;
+	&:hover {
+		transform: scale(1);
+	}
+}

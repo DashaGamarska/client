@@ -1,0 +1,266 @@
+{
+	"common": {
+		"readMore": "Read more",
+		"searchPlaceholder": "Search",
+		"notFound": "Oops, it seems like we haven't found anything. Try another search",
+		"login": "Login",
+		"registration": "Registration"
+	},
+	"home": {
+		"title": "Bringing pets and people together"
+	},
+	"news": {
+		"title": "News"
+	},
+	"register": {
+		"title": "Create an account",
+		"name": "Name",
+		"email": "Email",
+		"password": "Password",
+		"confirmPassword": "Confirm password",
+		"button": "Sign up"
+	},
+	"login": {
+		"title": "Login",
+		"email": "Email",
+		"password": "Password",
+		"button": "Login"
+	},
+	"user": {
+		"title": "My profile",
+		"logout": "Logout",
+		"account": "Account",
+		"form": {
+			"emailLabel": "Email",
+			"emailPlaceholder": "Enter your email",
+			"emailRequired": "Email is required",
+			"emailPattern": "Invalid email address",
+
+			"passwordLabel": "Password",
+			"passwordPlaceholder": "Enter password",
+			"passwordRequired": "Password is required",
+			"passwordPattern": "Min 7 max 32 symbols, no spaces",
+
+			"confirmPasswordLabel": "Confirm Password",
+			"confirmPasswordPlaceholder": "Repeat password",
+			"confirmPasswordRequired": "Confirm your password",
+
+			"nameLabel": "Name",
+			"namePlaceholder": "Enter your name",
+			"nameRequired": "Name is required",
+			"namePattern": "Latins only min 2, max 16",
+
+			"phoneLabel": "Phone",
+			"phonePlaceholder": "Enter phone number",
+			"phoneRequired": "Enter your phone",
+			"phonePattern": "Phone format: 0971234567",
+
+			"locationLabel": "Location",
+			"locationPlaceholder": "City, Region",
+			"locationRequired": "Enter your city and region",
+			"locationPattern": "Format: Brovary, Kyiv"
+		}
+	},
+	"notices": {
+		"title": "Notices",
+		"lost": "Lost & Found",
+		"forFree": "For free",
+		"favorite": "Favorite",
+		"own": "My notices"
+	},
+	"navigation": {
+		"news": "News",
+		"findPet": "Find pet",
+		"support": "Support"
+	},
+	"newsPage": {
+		"title": "News",
+		"searchPlaceholder": "Search",
+		"noResults": "Oops, we haven't found anything. Try another search.",
+		"readMore": "Read more"
+	},
+	"noticesPage": {
+		"title": "Notices",
+		"text": "Find your favorite pet",
+		"searchPlaceholder": "Search for a pet...",
+		"addPetBtn": "Add notice",
+		"addSuccess": "Notice added successfully!",
+		"addPetModalTitle": "Add pet",
+		"error": "Oops, something went wrong. Please try again.",
+		"noResults": "No results found. Try adjusting your search.",
+		"categories": {
+			"forFree": "For free",
+			"lost": "Lost & found",
+			"own": "My notices",
+			"favorite": "Favorites"
+		},
+		"item": {
+			"breed": "Breed",
+			"place": "Place",
+			"age": "Age",
+			"delete": "Delete"
+		},
+		"modal": {
+			"addPet": "Add pet",
+			"learnMore": "Learn more",
+			"titleAddPet": "Add your pet",
+			"download": "Adoption PDF",
+			"contact": "Contact",
+			"addTo": "Add to",
+			"removeFrom": "Remove from",
+			"wait": "Wait...",
+			"imageLabel": "Load the pet's image:",
+			"done": "Done",
+			"vaccineHistoryLabel": "Vaccination history",
+			"addVaccine": "Add vaccination",
+			"behavioralNotesLabel": "Behavioral Features",
+			"behavioralNotesPlaceholder": "E.g., aggressive, calm, doesn't get along with children",
+			"specialNeedsLabel": "Special Care Requirements",
+			"specialNeedsPlaceholder": "E.g., needs a diet, has allergies, requires medication",
+			"commentsLabel": "Listing Comment",
+			"commentsPlaceholder": "Additional notes or wishes for future owners"
+		},
+		"learnMoreModal": {
+			"category": "Category",
+			"title": "Title",
+			"name": "Name",
+			"birthday": "Birthday",
+			"breed": "Breed",
+			"place": "Place",
+			"email": "Email",
+			"phone": "Phone",
+			"healthHistory": "Health History",
+			"behavioralNotes": "Behavioral Notes",
+			"specialNeeds": "Special Needs",
+			"comments": "Comments",
+			"sex": "Sex",
+			"sexMale": "Male",
+			"sexFemale": "Female"
+		},
+		"validation": {
+			"cityRequired": "Enter your city and region, please",
+			"cityInvalid": "Format: Brovary, Kyiv",
+			"commentRequired": "Enter your comment",
+			"commentInvalid": "Latin only, min 8, max 120"
+		}
+	},
+	"auth": {
+		"login": {
+			"title": "Login",
+			"button": "Login",
+			"toastSuccess": "Welcome, {{name}}!",
+			"toastError": "Invalid password or email"
+		},
+		"register": {
+			"title": "Create an account",
+			"button": "Register",
+			"back": "Back",
+			"next": "Next",
+			"toastSuccess": "Welcome, {{name}}!",
+			"toastError": {
+				"emailInUse": "This email is already in use",
+				"general": "Oops, something went wrong... Try again, please"
+			}
+		},
+		"nav": {
+			"toRegister": "Don't have an account? Register",
+			"toLogin": "Already have an account? Login"
+		},
+		"validation": {
+			"emailRequired": "Email is required",
+			"emailInvalid": "Invalid email format",
+			"passwordRequired": "Password is required",
+			"confirmPasswordRequired": "Please confirm your password",
+			"nameRequired": "Enter your name, please",
+			"nameInvalid": "Latin only, min 2, max 16 characters",
+			"cityRequired": "Enter your city and region, please",
+			"cityInvalid": "Format: Brovary, Kyiv",
+			"phoneRequired": "Enter your phone, please",
+			"phoneInvalid": "Phone format: 0971234567"
+		}
+	},
+	"userPage": {
+		"title": "My information:",
+		"addSuccess": "Your pet successfully added.",
+		"error": "Oops, something went wrong, please try again.",
+		"noPets": "You don't have any pets yet",
+		"unknown": "Unknown",
+		"editPhoto": "Edit Photo",
+		"submitPhoto": "Submit",
+		"logout": "Log Out",
+		"myPets": "My Pets",
+		"addPet": "Add Pet",
+		"form": {
+			"name": "Name",
+			"email": "Email",
+			"birthday": "Birthday",
+			"phone": "Phone",
+			"city": "City",
+			"nameInvalid": "Latin only, min 2, max 16 characters",
+			"emailInvalid": "Invalid email format",
+			"birthdayInvalid": "Invalid date format. Use DD.MM.YYYY",
+			"phoneInvalid": "Phone format: +380XXXXXXXXX",
+			"cityInvalid": "Format: Brovary, Kyiv"
+		},
+		"modals": {
+			"addPet": "Add Pet",
+			"noPets": "You don't have any pets yet"
+		}
+	},
+	"categories": {
+		"lost": "Lost & Found",
+		"forFree": "For free"
+	},
+	"pets": {
+		"form": {
+			"name": "Name",
+			"namePlaceholder": "Enter pet's name",
+			"nameRequired": "Name is required",
+			"namePattern": "Latin letters only, min 2, max 16",
+
+			"birthday": "Date of Birth",
+			"birthdayPlaceholder": "dd.mm.yyyy",
+			"birthdayRequired": "Please enter the date of birth",
+			"birthdayPattern": "Format: 01.01.2020",
+
+			"breed": "Breed",
+			"breedPlaceholder": "Enter breed",
+			"breedRequired": "Breed is required",
+			"breedPattern": "Latin letters only, min 2, max 16",
+			"photoAndComment": "Add photo and comment",
+			"avatarRequired": "Please upload an image",
+
+			"commentLabel": "Comments",
+			"commentPlaceholder": "Enter comment",
+			"commentRequired": "Comment is required",
+			"commentPattern": "Latin only, min 8, max 120",
+
+			"cancel": "Cancel",
+			"next": "Next",
+			"back": "Back",
+			"done": "Done",
+
+			"titleLabel": "Title of ad",
+			"titlePlaceholder": "Type name",
+			"titleRequired": "Enter your title name",
+			"titlePattern": "Latin only, min 2, max 48",
+
+			"categoryRequired": "Choose an ad category"
+		}
+	},
+	"supportPage": {
+		"title": "Support our mission",
+		"description": "Your donation helps animals find loving homes. Every contribution counts and goes directly to food, medical care, and shelter.",
+		"howToHelp": "How you can help:",
+		"donateButton": "Donate now",
+		"donateOptions": {
+			"option100": "Donate 100 UAH",
+			"option200": "Donate 200 UAH",
+			"option500": "Donate 500 UAH"
+		},
+		"successTitle": "Thank you for your support! ❤️",
+		"successMessage": "Your donation has been successfully received. You are helping change the lives of animals.",
+		"cancelTitle": "Payment was cancelled",
+		"cancelMessage": "It seems something went wrong. You can try again later."
+	}
+}

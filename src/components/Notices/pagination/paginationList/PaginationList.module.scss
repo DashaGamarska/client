@@ -1,0 +1,6 @@
+@use 'shared/styles/mixins.scss';
+
+.list {
+	display: flex;
+	gap: 10px;
+}

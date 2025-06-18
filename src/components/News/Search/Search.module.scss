@@ -1,0 +1,60 @@
+@use 'src/shared/styles/variables.scss' as vars;
+@use 'src/shared/styles/mixins.scss' as mixins;
+
+.wrapper {
+	position: relative;
+	width: 280px;
+	height: 44px;
+	margin: 28px auto 0;
+
+	@include mixins.media('tablet') {
+		margin: 40px auto 0;
+		width: 608px;
+	}
+}
+
+.input {
+	background: vars.$secondary-bg-color;
+	box-shadow: 7px 4px 14px rgba(49, 21, 4, 0.07);
+	border-radius: 20px;
+	border: 1px solid transparent;
+	padding: 9px 12px 9px 20px;
+	transition: vars.$transition;
+	width: 100%;
+
+	&:focus,
+	&:hover {
+		border: 1px solid vars.$sixth-bg-color;
+		outline: none;
+	}
+}
+.input:hover ~ .tooltip {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.search {
+	fill: black;
+}
+
+.searchTooltip {
+	@extend .search;
+	margin-left: 5px;
+	transform: scale(0.7);
+	vertical-align: middle;
+}
+.tooltip,
+.input:not(:placeholder-shown) ~ .tooltip {
+	position: absolute;
+	top: -50px;
+	left: 0;
+
+	opacity: 0;
+	pointer-events: none;
+	padding: 10px 25px;
+	color: vars.$accent-color;
+	font-size: 14px;
+	border-radius: 30px;
+	transition: vars.$transition;
+	border: 1px solid vars.$sixth-bg-color;
+}

@@ -1,0 +1,46 @@
+@use 'src/shared/styles/variables.scss' as vars;
+@use 'src/shared/styles/mixins.scss' as mixins;
+
+.nav {
+	@include mixins.flex(flex-start, center);
+	gap: 12px;
+	flex-wrap: wrap;
+
+	@include mixins.media('tablet') {
+		width: 70%;
+	}
+
+	&__item {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+	}
+
+	&__link {
+		width: 100%;
+		outline: none;
+		padding: 8px 28px;
+		border-radius: 40px;
+		cursor: pointer;
+		border: 2px solid vars.$accent-color;
+		transition: vars.$transition;
+		background-color: vars.$secondary-bg-color;
+
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 19px;
+		letter-spacing: 0.04em;
+		text-decoration: none;
+
+		&:hover {
+			border-color: vars.$hover-color;
+		}
+
+		@include mixins.media('tablet') {
+			padding: 8px 28px;
+
+			font-size: 20px;
+			line-height: 27px;
+		}
+	}
+}

@@ -1,0 +1,199 @@
+@use 'src/shared/styles/variables.scss' as vars;
+@use 'src/shared/styles/mixins.scss' as mixins;
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-grow: 1;
+
+	height: auto;
+	padding-bottom: 16px;
+	min-height: max-content;
+	width: 280px;
+	background: vars.$secondary-bg-color;
+	box-shadow: 7px 4px 14px rgba(49, 21, 4, 0.07);
+	border-radius: 0px 0px 40px 40px;
+
+	@include mixins.media('tablet') {
+		width: 336px;
+	}
+
+	@include mixins.media('desktop') {
+		width: 288px;
+	}
+}
+
+.heading {
+	position: relative;
+	width: 250px;
+	max-height: 76px;
+	margin-bottom: 16px;
+
+	&__title {
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 38px;
+		letter-spacing: -0.01em;
+
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		transition: vars.$transition;
+	}
+
+	&__tooltip {
+		position: absolute;
+		font-size: 0px;
+		top: -55%;
+		left: 0;
+	}
+
+	&__title:hover ~ &__tooltip {
+		width: max-content;
+		font-weight: 500;
+		font-size: 18px;
+		background-color: vars.$sixth-bg-color;
+		border: 1px solid vars.$accent-color;
+		border-radius: 20px;
+		padding: 1px 8px;
+	}
+}
+
+.boxWrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-grow: 1;
+
+	width: 280px;
+	margin: 0px auto;
+	padding: 0px 16px;
+}
+
+.list {
+	@include mixins.flex(center, flex-start);
+	flex-direction: column;
+	gap: 8px;
+	width: 100%;
+	margin-bottom: 6px;
+
+	&__item {
+		display: flex;
+		height: inherit;
+		margin-bottom: 8px;
+	}
+
+	&__paragraph {
+		min-width: 80px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 20px;
+		margin-right: 4px;
+	}
+
+	&__span {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 20px;
+		overflow-wrap: anywhere;
+		word-break: break-word;
+	}
+}
+
+.pctWrap {
+	position: relative;
+	height: 288px;
+	margin-bottom: 20px;
+
+	&__pictures {
+		display: block;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+.likeWrap {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	@include mixins.flex(center, center);
+
+	width: 44px;
+	height: 44px;
+
+	border: none;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.6);
+	backdrop-filter: blur(2px);
+
+	&__button {
+		@include mixins.flex(center, center);
+		background: none;
+		border: none;
+		cursor: pointer;
+	}
+
+	&__svg {
+		stroke: 2px vars.$accent-color;
+	}
+}
+
+.categor {
+	@include mixins.flex(center, center);
+
+	position: absolute;
+	left: 0;
+	top: 20px;
+	width: 158px;
+	height: 28px;
+
+	border: none;
+	border-radius: 0px 100px 100px 0px;
+	background: rgba(255, 255, 255, 0.6);
+	backdrop-filter: blur(2px);
+
+	&__paragraph {
+		font-family: 'Inter';
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 15px;
+		letter-spacing: 0.04em;
+	}
+}
+
+.btnContainer {
+	width: 248px;
+	height: 100px;
+	@include mixins.flex(center, center);
+	gap: 12px;
+	margin-bottom: 12px;
+}
+
+.deleteOwnNotice {
+	@include mixins.flex(center, center);
+	gap: 8px;
+
+	width: 100%;
+	padding: 5px 28px;
+	color: vars.$hover-color;
+	background-color: vars.$secondary-bg-color;
+
+	outline: none;
+	border-radius: 40px;
+	border: 2px solid vars.$hover-color;
+	transition: vars.$transition;
+	cursor: pointer;
+
+	@include mixins.media('tablet') {
+		padding: 5px 28px;
+	}
+
+	&__trash {
+		height: 44px;
+		@include mixins.flex(center, center);
+		width: 20px;
+		height: 20px;
+	}
+}

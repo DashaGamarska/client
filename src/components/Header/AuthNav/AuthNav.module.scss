@@ -1,0 +1,117 @@
+@use 'src/shared/styles/variables.scss' as vars;
+@use 'src/shared/styles/mixins.scss' as mixins;
+
+.btn {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	height: 35px;
+	gap: 12px;
+	margin-top: 46px;
+
+	@include mixins.media('tablet') {
+		flex-direction: row;
+		margin-top: 0;
+		height: 100%;
+	}
+
+	@include mixins.media('desktop') {
+		flex-direction: row;
+		gap: 20px;
+		height: 47px;
+	}
+}
+
+.linkLogo {
+	@include mixins.flex(center, center);
+	width: 100%;
+	height: 100%;
+	color: vars.$secondary-text-color;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.35;
+
+	@include mixins.media('tablet') {
+		font-size: 20px;
+	}
+
+	@include mixins.media('desktop') {
+		color: vars.$secondary-text-color;
+		text-decoration: none;
+	}
+}
+
+.login {
+	@include mixins.flex(center, center);
+	width: 95px;
+	background: vars.$accent-color;
+	border-radius: 40px;
+	transition: vars.$transition;
+
+	@include mixins.media('tablet') {
+		width: 111px;
+		height: 47px;
+	}
+
+	@include mixins.media('desktop') {
+		width: 111px;
+		background: vars.$accent-color;
+		border-radius: 40px;
+		height: 48px;
+
+		&:hover,
+		&:focus {
+			background: #7db9e8;
+		}
+	}
+}
+
+.linkRegistration {
+	@include mixins.flex(center, center);
+	width: 100%;
+	height: 100%;
+	color: vars.$primary-text-color;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.35;
+
+	@include mixins.media('tablet') {
+		font-size: 20px;
+	}
+
+	@include mixins.media('desktop') {
+		color: vars.$primary-text-color;
+		text-decoration: none;
+	}
+}
+
+.registration {
+	@include mixins.flex(center, center);
+	width: 144px;
+
+	background: vars.$secondary-bg-color;
+	border-radius: 40px;
+	border: 2px solid vars.$accent-color;
+
+	transition: vars.$transition;
+
+	@include mixins.media('tablet') {
+		width: 181px;
+		height: 47px;
+	}
+
+	@include mixins.media('desktop') {
+		background: vars.$secondary-bg-color;
+		border-radius: 40px;
+		border: 2px solid vars.$accent-color;
+		height: 48px;
+
+		&:hover,
+		&:focus {
+			border-color: #7db9e8;
+		}
+	}
+}

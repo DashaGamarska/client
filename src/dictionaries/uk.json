@@ -1,0 +1,265 @@
+{
+	"common": {
+		"readMore": "Читати далі",
+		"searchPlaceholder": "Пошук",
+		"notFound": "Ой, схоже, що ми нічого не знайшли. Спробуйте інший запит",
+		"login": "Увійти",
+		"registration": "Реєстрація"
+	},
+	"home": {
+		"title": "З’єднуємо тварин і людей"
+	},
+	"news": {
+		"title": "Новини"
+	},
+	"register": {
+		"title": "Створіть обліковий запис",
+		"name": "Ім’я",
+		"email": "Електронна пошта",
+		"password": "Пароль",
+		"confirmPassword": "Підтвердіть пароль",
+		"button": "Зареєструватися"
+	},
+	"login": {
+		"title": "Вхід у систему",
+		"email": "Електронна пошта",
+		"password": "Пароль",
+		"button": "Увійти"
+	},
+	"user": {
+		"title": "Мій профіль",
+		"logout": "Вийти",
+		"account": "Акаунт",
+		"form": {
+			"emailLabel": "Електронна пошта",
+			"emailPlaceholder": "Введіть пошту",
+			"emailRequired": "Пошта обов'язкова",
+			"emailPattern": "Невірний формат пошти",
+
+			"passwordLabel": "Пароль",
+			"passwordPlaceholder": "Введіть пароль",
+			"passwordRequired": "Пароль обов'язковий",
+			"passwordPattern": "Від 7 до 32 символів, без пробілів",
+
+			"confirmPasswordLabel": "Підтвердження пароля",
+			"confirmPasswordPlaceholder": "Повторіть пароль",
+			"confirmPasswordRequired": "Підтвердіть пароль",
+
+			"nameLabel": "Ім’я",
+			"namePlaceholder": "Введіть ім’я",
+			"nameRequired": "Ім’я обов’язкове",
+			"namePattern": "Лише латиниця, від 2 до 16 символів",
+
+			"phoneLabel": "Телефон",
+			"phonePlaceholder": "Введіть номер",
+			"phoneRequired": "Телефон обов’язковий",
+			"phonePattern": "Формат номера: 0971234567",
+
+			"locationLabel": "Місто",
+			"locationPlaceholder": "Місто, область",
+			"locationRequired": "Введіть місто та область",
+			"locationPattern": "Формат: Бровари, Київ"
+		}
+	},
+	"notices": {
+		"title": "Оголошення",
+		"lost": "Загублені",
+		"forFree": "Віддам безкоштовно",
+		"favorite": "Улюблені",
+		"own": "Мої оголошення"
+	},
+	"navigation": {
+		"news": "Новини",
+		"findPet": "Знайти улюбленця",
+		"support": "Підтримати"
+	},
+	"newsPage": {
+		"title": "Новини",
+		"searchPlaceholder": "Пошук",
+		"noResults": "На жаль, нічого не знайдено. Спробуйте інший запит.",
+		"readMore": "Читати далі"
+	},
+	"noticesPage": {
+		"title": "Оголошення",
+		"text": "Знайдіть свого улюбленця",
+		"searchPlaceholder": "Пошук тваринки...",
+		"addPetBtn": "Додати оголошення",
+		"addSuccess": "Оголошення успішно додано!",
+		"addPetModalTitle": "Додати тварину",
+		"error": "Сталася помилка, спробуйте ще раз.",
+		"noResults": "Нічого не знайдено. Спробуйте змінити запит.",
+		"categories": {
+			"forFree": "Віддам безкоштовно",
+			"lost": "Загублені/знайдені",
+			"own": "Мої оголошення",
+			"favorite": "Улюблені"
+		},
+		"item": {
+			"breed": "Порода",
+			"place": "Локація",
+			"age": "Вік",
+			"delete": "Видалити"
+		},
+		"modal": {
+			"addPet": "Додати улюбленця",
+			"learnMore": "Дізнатися більше",
+			"titleAddPet": "Додайте улюбленця",
+			"download": "PDF для усиновлення",
+			"contact": "Контакти",
+			"addTo": "Додати в улюблені",
+			"removeFrom": "Видалити з улюблених",
+			"wait": "Зачекайте...",
+			"imageLabel": "Завантажте зображення улюбленця:",
+			"done": "Готово",
+			"vaccineHistoryLabel": "Історія щеплень",
+			"addVaccine": "Додати щеплення",
+			"behavioralNotesLabel": "Особливості поведінки",
+			"behavioralNotesPlaceholder": "Наприклад: агресивна, спокійна, з дітьми не ладнає",
+			"specialNeedsLabel": "Особливості догляду",
+			"specialNeedsPlaceholder": "Наприклад: вимагає дієти, має алергію, потребує ліки",
+			"commentsLabel": "Коментар до оголошення",
+			"commentsPlaceholder": "Додаткові зауваження або побажання до майбутніх власників"
+		},
+		"learnMoreModal": {
+			"category": "Категорія",
+			"title": "Заголовок",
+			"name": "Ім’я",
+			"birthday": "Дата народження",
+			"breed": "Порода",
+			"place": "Місце",
+			"sex": "Стать",
+			"email": "Електронна пошта",
+			"phone": "Телефон",
+			"healthHistory": "Історія щеплень",
+			"behavioralNotes": "Особливості поведінки",
+			"specialNeeds": "Особливі потреби",
+			"comments": "Коментарі",
+			"sexMale": "Самець",
+			"sexFemale": "Самка"
+		},
+		"validation": {
+			"cityRequired": "Введіть місто та область",
+			"cityInvalid": "Формат: Бровари, Київ",
+			"commentRequired": "Введіть коментар",
+			"commentInvalid": "Тільки латиниця, від 8 до 120 символів"
+		}
+	},
+	"auth": {
+		"login": {
+			"title": "Вхід",
+			"button": "Увійти",
+			"toastSuccess": "Ласкаво просимо, {{name}}!",
+			"toastError": "Невірний пароль або електронна пошта"
+		},
+		"register": {
+			"title": "Створити акаунт",
+			"button": "Зареєструватися",
+			"back": "Назад",
+			"next": "Далі",
+			"toastSuccess": "Ласкаво просимо, {{name}}!",
+			"toastError": {
+				"emailInUse": "Ця електронна пошта вже використовується",
+				"general": "На жаль, сталася помилка... Спробуйте ще раз"
+			}
+		},
+		"nav": {
+			"toRegister": "Немає акаунту? Зареєструйтеся",
+			"toLogin": "Вже маєте акаунт? Увійдіть"
+		},
+		"validation": {
+			"emailRequired": "Введіть електронну пошту",
+			"emailInvalid": "Невірний формат електронної пошти",
+			"passwordRequired": "Введіть пароль",
+			"confirmPasswordRequired": "Підтвердьте пароль",
+			"nameRequired": "Введіть ім’я",
+			"nameInvalid": "Тільки латиниця, від 2 до 16 символів",
+			"cityRequired": "Введіть місто та регіон",
+			"cityInvalid": "Формат: Бровари, Київ",
+			"phoneRequired": "Введіть номер телефону",
+			"phoneInvalid": "Формат телефону: 0971234567"
+		}
+	},
+	"userPage": {
+		"title": "Моя інформація:",
+		"addSuccess": "Ваш улюбленець успішно доданий.",
+		"error": "Ой, щось пішло не так. Спробуйте ще раз.",
+		"noPets": "У вас ще немає улюбленців",
+		"unknown": "Невідомо",
+		"editPhoto": "Редагувати фото",
+		"submitPhoto": "Підтвердити",
+		"logout": "Вийти",
+		"myPets": "Мої улюбленці",
+		"addPet": "Додати улюбленця",
+		"form": {
+			"name": "Ім’я",
+			"email": "Електронна пошта",
+			"birthday": "Дата народження",
+			"phone": "Телефон",
+			"city": "Місто",
+			"nameInvalid": "Лише латиниця, від 2 до 16 символів",
+			"emailInvalid": "Невірний формат пошти",
+			"birthdayInvalid": "Формат дати: ДД.ММ.РРРР",
+			"phoneInvalid": "Формат телефону: +380XXXXXXXXX",
+			"cityInvalid": "Приклад: Бровари, Київ"
+		},
+		"modals": {
+			"addPet": "Додати улюбленця",
+			"noPets": "У вас ще немає улюбленців"
+		}
+	},
+	"categories": {
+		"lost": "Загублені / Знайдені",
+		"forFree": "Віддам безкоштовно"
+	},
+	"pets": {
+		"form": {
+			"name": "Кличка",
+			"namePlaceholder": "Введіть кличку тварини",
+			"nameRequired": "Кличка обов’язкова",
+			"namePattern": "Лише латиниця, мін. 2, макс. 16",
+
+			"birthday": "Дата народження",
+			"birthdayPlaceholder": "дд.мм.рррр",
+			"birthdayRequired": "Вкажіть дату народження",
+			"birthdayPattern": "Формат: 01.01.2020",
+
+			"breed": "Порода",
+			"breedPlaceholder": "Введіть породу",
+			"breedRequired": "Порода обов’язкова",
+			"breedPattern": "Лише латиниця, мін. 2, макс. 16",
+			"photoAndComment": "Додайте фото та коментар",
+			"avatarRequired": "Завантажте зображення",
+			"commentLabel": "Коментарі",
+			"commentPlaceholder": "Введіть коментар",
+			"commentRequired": "Коментар обов’язковий",
+			"commentPattern": "Лише латиниця, мін. 8, макс. 120",
+
+			"cancel": "Скасувати",
+			"next": "Далі",
+			"back": "Назад",
+			"done": "Готово",
+
+			"titleLabel": "Заголовок оголошення",
+			"titlePlaceholder": "Введіть назву",
+			"titleRequired": "Введіть заголовок оголошення",
+			"titlePattern": "Лише латинські літери, від 2 до 48 символів",
+
+			"categoryRequired": "Оберіть категорію оголошення"
+		}
+	},
+	"supportPage": {
+		"title": "Підтримайте нашу місію",
+		"description": "Ваша пожертва допомагає тваринам знайти люблячі домівки. Кожен внесок має значення і йде безпосередньо на їжу, медичний догляд та притулок.",
+		"howToHelp": "Як ви можете допомогти:",
+		"donateButton": "Задонатити",
+		"donateOptions": {
+			"option100": "Пожертвувати 100 грн",
+			"option200": "Пожертвувати 200 грн",
+			"option500": "Пожертвувати 500 грн"
+		},
+		"successTitle": "Дякуємо за вашу підтримку! ❤️",
+		"successMessage": "Ваш донат був успішно прийнятий. Ви допомагаєте змінювати життя тварин.",
+		"cancelTitle": "Платіж скасовано",
+		"cancelMessage": "Здається, щось пішло не так. Ви можете спробувати ще раз."
+	}
+}

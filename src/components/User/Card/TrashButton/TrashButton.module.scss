@@ -1,0 +1,35 @@
+@use 'shared/styles/variables' as vars;
+@use 'shared/styles/mixins' as mixins;
+
+.iconThumb {
+	position: absolute;
+	top: 65%;
+	right: 0;
+	transform: translate(-100%, -50%);
+	cursor: pointer;
+	@include mixins.flex(center, center);
+	width: 20px;
+	height: 20px;
+	padding: 0px;
+	color: rgba(17, 17, 17, 0.6);
+
+	background-color: transparent;
+	border: none;
+
+	@include mixins.media('tablet') {
+		width: 44px;
+		height: 44px;
+		top: 0;
+		right: 0;
+		transform: translate(-50%, 50%);
+		border-radius: 50%;
+		background-color: vars.$primary-bg-color;
+		backdrop-filter: blur(2px);
+	}
+
+	&:hover,
+	&:focus {
+		filter: drop-shadow(0 0 10px vars.$hover-color);
+		color: vars.$hover-color;
+	}
+}

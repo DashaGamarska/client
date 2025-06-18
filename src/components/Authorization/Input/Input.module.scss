@@ -1,0 +1,80 @@
+@use 'src/shared/styles/variables.scss' as vars;
+@use 'src/shared/styles/mixins.scss' as mixins;
+
+.inputWrapper {
+	position: relative;
+	margin-bottom: 16px;
+}
+
+.inputWrapper:last-of-type {
+	margin-bottom: 40px;
+}
+
+.input:focus ~ .label,
+.input:not(:placeholder-shown) ~ .label,
+.input:not(:placeholder-shown):valid ~ .label,
+.input:not(:placeholder-shown):invalid ~ .label,
+.input:-webkit-autofill ~ .label {
+	top: 0;
+	font-size: 14px;
+}
+
+.input::placeholder {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.label {
+	position: absolute;
+	top: 50%;
+	left: 34px;
+	transform: translateY(-50%);
+	padding: 0 5px;
+
+	border-radius: 5px;
+	pointer-events: none;
+	color: vars.$third-bg-color;
+	background-color: vars.$primary-bg-color;
+
+	transition: 0.2s all ease-in-out;
+}
+
+.input {
+	width: 280px;
+	height: 40px;
+	padding: 0 30px;
+
+	border: 1px solid vars.$accent-color;
+	background-color: vars.$primary-bg-color;
+	border-radius: 40px;
+	outline-color: vars.$accent-color;
+
+	@include mixins.media('tablet') {
+		width: 450px;
+		height: 50px;
+	}
+}
+.input:not(:placeholder-shown):not(:focus):valid {
+	background-color: vars.$primary-bg-color;
+}
+
+.phoneCode {
+	position: absolute;
+	top: 50%;
+	left: 30px;
+	transform: translateY(-50%);
+	opacity: 0;
+
+	transition: 0.2s all ease-in-out;
+}
+.input:focus ~ .phoneCode,
+.input:not(:placeholder-shown) ~ .phoneCode,
+.input:not(:placeholder-shown):valid ~ .phoneCode,
+.input:not(:placeholder-shown):invalid ~ .phoneCode {
+	opacity: 1;
+}
+
+.inputTel {
+	@extend .input;
+	padding-left: 60px;
+}

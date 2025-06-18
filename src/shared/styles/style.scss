@@ -1,0 +1,102 @@
+@use 'shared/styles/variables' as vars;
+@use 'shared/styles/mixins' as mixins;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+label:hover,
+input:hover,
+button:hover {
+	cursor: pointer;
+}
+
+textarea {
+	resize: none;
+}
+
+ul,
+ol {
+	padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+article > * + * {
+	margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+button {
+	margin: 0;
+}
+
+body {
+	font-family: vars.$fontFamily;
+	background-color: vars.$primary-bg-color;
+	color: vars.$primary-text-color;
+
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 16px;
+}
+
+h1 {
+	padding: 60px auto 40px;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}

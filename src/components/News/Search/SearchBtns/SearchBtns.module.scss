@@ -1,0 +1,31 @@
+@use 'src/shared/styles/variables.scss' as vars;
+@use 'src/shared/styles/mixins.scss' as mixins;
+
+.btn {
+	padding: 0;
+	position: absolute;
+	@include mixins.flex(center, center);
+	top: 50%;
+	transform: translateY(-50%);
+	right: 10px;
+	outline: none;
+	background-color: transparent;
+	width: 24px;
+	height: 24px;
+	border: none;
+	border-radius: 50%;
+}
+
+.search {
+	fill: black;
+}
+
+.btn:hover svg {
+	fill: vars.$accent-color;
+	stroke: vars.$accent-color;
+}
+
+.clear {
+	stroke: black;
+	transition: vars.$transition;
+}

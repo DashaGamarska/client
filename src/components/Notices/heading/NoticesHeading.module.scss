@@ -1,0 +1,13 @@
+@use 'src/shared/styles/mixins.scss';
+
+.wrapper {
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 33px;
+
+	text-align: center;
+
+	color: #111111;
+}

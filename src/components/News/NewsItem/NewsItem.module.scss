@@ -1,0 +1,114 @@
+@use 'src/shared/styles/variables.scss' as vars;
+@use 'src/shared/styles/mixins.scss' as mixins;
+
+.article {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	min-height: 300px;
+	padding: 16px;
+	border-radius: 8px;
+	background-color: vars.$primary-bg-color;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.article::before {
+	content: '';
+	display: block;
+	width: 200px;
+	height: 4px;
+	margin-bottom: 5px;
+
+	border-radius: 40px;
+	background-image: linear-gradient(
+		to right,
+		rgba(125, 185, 232, 1),
+		rgba(255, 183, 255, 1)
+	);
+
+	@include mixins.media('tablet') {
+		height: 8px;
+		width: 280px;
+	}
+
+	@include mixins.media('desktop') {
+		width: 340px;
+	}
+}
+
+.heading {
+	display: -webkit-box;
+	height: 66px;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.35;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.tooltip {
+	position: absolute;
+	top: -100px;
+	left: 5%;
+	width: 280px;
+	display: none;
+	padding: 10px 25px;
+
+	font-size: 14px;
+	border-radius: 30px;
+	transition: vars.$transition;
+	background-color: vars.$primary-bg-color;
+	border: 1px solid vars.$sixth-bg-color;
+
+	@include mixins.media('tablet') {
+		left: 20%;
+	}
+
+	@include mixins.media('desktop') {
+		left: 30%;
+	}
+}
+
+.heading:hover ~ .tooltip {
+	display: block;
+}
+
+.heading:focus ~ .tooltip {
+	display: block;
+}
+
+.text {
+	display: -webkit-box;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	@include mixins.media('tablet') {
+		-webkit-line-clamp: 6;
+	}
+
+	@include mixins.media('desktop') {
+		-webkit-line-clamp: 5;
+	}
+}
+.details {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.date {
+	color: vars.$third-bg-color;
+}
+
+.link {
+	color: vars.$accent-color;
+	&:hover {
+		color: vars.$hover-color;
+	}
+}

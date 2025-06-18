@@ -1,0 +1,32 @@
+@use 'shared/styles/variables' as vars;
+@use 'shared/styles/mixins' as mixins;
+
+.btn {
+	width: 45px;
+	height: 45px;
+	outline: none;
+	border-radius: 50%;
+	cursor: pointer;
+	border: 2px solid transparent;
+	transition: vars.$transition;
+
+	background-color: vars.$accent-color;
+	color: vars.$secondary-text-color;
+	&:hover,
+	&:focus {
+		background-color: vars.$hover-color;
+		border-color: vars.$hover-color;
+	}
+	&:active {
+		background-color: vars.$hover-color;
+	}
+
+	@include mixins.media('tablet') {
+		width: 50px;
+		height: 50px;
+	}
+}
+.btnActive {
+	@extend .btn;
+	background-color: vars.$hover-color;
+}

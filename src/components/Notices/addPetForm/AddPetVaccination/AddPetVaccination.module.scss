@@ -1,0 +1,95 @@
+@use 'src/shared/styles/variables.scss' as vars;
+@use 'src/shared/styles/mixins.scss' as mixins;
+
+.vaccine__wrapper {
+	padding: 10px 0;
+	width: 100%;
+	margin: 20px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+}
+
+.section__label {
+	font-weight: 500;
+	font-size: 18px;
+	color: vars.$primary-text-color;
+	margin-bottom: 8px;
+	align-self: flex-start;
+
+	@include mixins.media('tablet') {
+		font-size: 20px;
+	}
+}
+
+.vaccine__group {
+	@include mixins.flex(row, center);
+	flex-wrap: wrap;
+	gap: 12px;
+	width: 100%;
+}
+
+.vaccine__input {
+	height: 40px;
+	padding: 10px 16px;
+
+	font-size: 14px;
+	border: 1px solid vars.$accent-color;
+	background-color: vars.$primary-bg-color;
+	border-radius: 40px;
+	color: vars.$primary-text-color;
+	outline-color: vars.$accent-color;
+
+	@include mixins.media('tablet') {
+		height: 50px;
+		font-size: 16px;
+	}
+
+	&:first-of-type {
+		flex-grow: 1;
+		min-width: 180px;
+	}
+
+	&:last-of-type {
+		width: 150px;
+	}
+}
+
+.vaccine__remove {
+	width: 32px;
+	height: 32px;
+	border: 1px solid vars.$hover-color;
+	border-radius: 50%;
+	background-color: transparent;
+	color: vars.$hover-color;
+	font-weight: 700;
+	font-size: 20px;
+	cursor: pointer;
+
+	@include mixins.flex(center, center);
+	transition: all 0.3s ease;
+
+	&:hover {
+		background-color: vars.$hover-color;
+		color: #fff;
+	}
+}
+
+.vaccine__add {
+	width: fit-content;
+	padding: 8px 20px;
+	border-radius: 40px;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+	border: 1px solid vars.$accent-color;
+	background-color: transparent;
+	color: vars.$accent-color;
+	transition: all 0.3s ease;
+
+	&:hover {
+		background-color: vars.$accent-color;
+		color: #fff;
+	}
+}

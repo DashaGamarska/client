@@ -1,0 +1,47 @@
+@use '../../../shared/styles/mixins';
+@use '../../../shared/styles/variables';
+
+.wrap {
+	position: relative;
+	width: fit-content;
+	margin: 0 auto;
+	width: 90%;
+	@include media(tablet) {
+		width: 80%;
+	}
+	@include media(desktop) {
+		width: 600px;
+	}
+}
+
+.input {
+	background: $secondary-bg-color;
+	box-shadow: 7px 4px 14px rgba(49, 21, 4, 0.07);
+	border-radius: 20px;
+	border: 1px solid transparent;
+	padding: 9px 12px;
+	transition: $transition;
+	width: 100%;
+
+	&:focus,
+	&:hover {
+		border: 1px solid $sixth-bg-color;
+		outline: none;
+	}
+}
+
+.btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 10px;
+	outline: none;
+	background-color: transparent;
+	width: 24px;
+	height: 24px;
+	background: url('../../../shared/images/overused/search.png') no-repeat 50%;
+	background-size: 17px;
+	border: none;
+	border-radius: 50%;
+	transition: $transition;
+}

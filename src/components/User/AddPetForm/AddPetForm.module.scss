@@ -1,0 +1,15 @@
+@use 'shared/styles/variables' as vars;
+@use 'shared/styles/mixins' as mixins;
+
+.form {
+	margin: 0px auto;
+	width: 100%;
+	max-width: 280px;
+	@include mixins.flex(center, center);
+	flex-direction: column;
+	gap: 16px;
+	@include mixins.media('tablet') {
+		min-width: 448px;
+		gap: 28px;
+	}
+}

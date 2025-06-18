@@ -1,0 +1,40 @@
+@use 'shared/styles/variables' as vars;
+@use 'shared/styles/mixins' as mixins;
+
+.wrapper {
+	@include mixins.flex(center, center);
+	flex-direction: column;
+	gap: 12px;
+	width: 240px;
+
+	@include mixins.media('tablet') {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		gap: 20px;
+		width: 380px;
+	}
+
+	@include mixins.media('desktop') {
+		gap: 24px;
+		width: 384px;
+	}
+}
+
+.submitBtn {
+	width: 100%;
+	outline: none;
+	padding: 8px 28px;
+	border-radius: 40px;
+	cursor: pointer;
+	border: 2px solid vars.$accent-color;
+	transition: vars.$transition;
+
+	background-color: vars.$secondary-bg-color;
+	color: vars.$fifth-text-color;
+	&:hover {
+		border-color: vars.$hover-color;
+	}
+	@include mixins.media(tablet) {
+		padding: 10px 28px;
+	}
+}

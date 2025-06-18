@@ -1,0 +1,52 @@
+@use 'shared/styles/variables' as vars;
+@use 'shared/styles/mixins' as mixins;
+
+.card__meta {
+	@include mixins.flex(center, flex-start);
+	flex-direction: column;
+	gap: 12px;
+	@include mixins.media('tablet') {
+		min-width: 270px;
+		margin-bottom: auto;
+	}
+	@include mixins.media('desktop') {
+		width: 566px;
+	}
+}
+
+.card__metaInfo {
+	overflow-wrap: break-word;
+	@include mixins.flex(flex-start, center);
+	flex-wrap: nowrap;
+	width: 100%;
+
+	@include mixins.media('tablet') {
+		width: 470px;
+	}
+	@include mixins.media('desktop') {
+		width: 580px;
+	}
+}
+
+.card__metaHeading {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.35;
+	letter-spacing: 0.04em;
+	@include mixins.media('tablet') {
+		font-size: 16px;
+		line-height: 1.75;
+	}
+}
+
+.card__metaText {
+	overflow-wrap: break-word;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.35;
+	letter-spacing: 0.04em;
+	@include mixins.media('tablet') {
+		font-size: 16px;
+		line-height: 1.75;
+	}
+}

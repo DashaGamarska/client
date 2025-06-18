@@ -1,0 +1,22 @@
+@use 'src/shared/styles/variables.scss' as vars;
+@use 'src/shared/styles/mixins.scss' as mixins;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.span {
+	color: vars.$accent-color;
+}
+
+.link {
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.07em;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 171%;
+	color: vars.$primary-text-color;
+	text-decoration: none;
+
+	@include mixins.media('tablet') {
+		font-size: 32px;
+		line-height: 150%;
+	}
+}
